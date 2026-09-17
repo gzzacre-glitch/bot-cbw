@@ -3,7 +3,7 @@ from discord.ext import commands
 
 DONO_VENDAS_ID = 848956596092796968
 
-# Links das imagens dos produtos (Substitua pelos seus links do Imgur/Imgbb ou Discord)
+# Links das imagens dos produtos (Substitua pelos seus links do Imgur/Imgbb)
 URL_IMAGEM_ESMERALDA = "https://i.imgur.com/iJUOnFG.png"
 URL_IMAGEM_CARD = "https://i.imgur.com/Rhna2qs.png"
 URL_IMAGEM_IMPULSO = "https://i.imgur.com/08CmKaU.png"
@@ -64,7 +64,7 @@ class SelectProdutos(discord.ui.Select):
                         f"Aguarde o responsável <@{DONO_VENDAS_ID}> responder para finalizar o pagamento e aprovar seu produto.",
             color=discord.Color.green()
         )
-        embed_ticket.set_footer(text="CB WPS - Sistema de Vendas")
+        embed_ticket.set_footer(text="Comunidade Brasileira de WPS - Sistema de Vendas")
 
         await canal_ticket.send(content=f"{interaction.user.mention} | <@{DONO_VENDAS_ID}>", embed=embed_ticket)
         await interaction.response.send_message(f"✅ Seu ticket de compra foi gerado em {canal_ticket.mention}!", ephemeral=True)
@@ -85,7 +85,7 @@ class LojaCog(commands.Cog):
 
         # Embed 1: Sócio Esmeralda
         embed_esmeralda = discord.Embed(
-            title="<:es:1548261219448914001> <@&1548274447671099403>",
+            title="💚 VIP ESMERALDA",
             description="🚨 **Atenção:** todos valores são usados na melhoria do servidor para realização dos campeonatos.\n\n"
                         "Compras somente com: <@848956596092796968>\n\n"
                         "**Benefícios**\n"
@@ -108,7 +108,7 @@ class LojaCog(commands.Cog):
             title="🃏 CARD WPS",
             description="🚨 **Atenção:** todos valores são usados na melhoria do servidor para realização dos campeonatos.\n\n"
                         "Compras somente com: <@848956596092796968>\n\n"
-                        "> **Adicione sua Card do WPS na Comunidade do Discord**\n"
+                        "> **Adicione sua Card do WPS na Comunidade Brasileira de WPS**\n"
                         "Sempre que digitar `+seunickname` sua card será exibida para a comunidade inteira.\n\n"
                         f"**Valor Único:** R$ 3,50 `(Estoque: {ESTOQUE['Card WPS']['qtd']}/30)`\n\n"
                         "Compras somente com: <@848956596092796968>",
@@ -118,29 +118,29 @@ class LojaCog(commands.Cog):
 
         # Embed 3: Impulso
         embed_impulso = discord.Embed(
-            title="<:boo:1546707808781733948> <@&1077670471144845375>",
-            description="<:boo:1546707808781733948> Impulsione o servidor\n\n"
+            title="🚀 IMPULSO DO SERVIDOR",
+            description="🚀 Impulsione o servidor da Comunidade Brasileira de WPS\n\n"
                         "**Benefícios**\n"
                         "• 🃏 Card WPS no servidor com comando 50%off\n"
                         "• 🔄 Inscrever jogadores 20%off fora da janela de transferência\n"
                         "• 📹 Enviar foto/vídeo no chat\n"
                         "• 🎟️ Participar de sorteios exclusivos\n\n"
                         "**Validade:** Duração do impulso\n\n"
-                        "<:boo:1546707808781733948> Impulsione o servidor",
+                        "🚀 Impulsione o servidor",
             color=discord.Color.purple()
         )
         embed_impulso.set_thumbnail(url=URL_IMAGEM_IMPULSO)
 
         # Embed 4: Sócio Diamante
         embed_diamante = discord.Embed(
-            title="<:dm:1548261001990770709> <@&1548274309745876992>",
+            title="💎 VIP DIAMANTE",
             description="🚨 **Atenção:** todos valores são usados na melhoria do servidor para realização dos campeonatos.\n\n"
                         "Compras somente com: <@848956596092796968>\n\n"
                         "**Benefícios**\n"
-                        "• <:es:1548261219448914001> Todos benefícios <@&1548274447671099403>\n"
+                        "• 💚 Todos benefícios do VIP Esmeralda\n"
                         "• 🏆 Acesso antecipado em todos campeonatos\n"
                         "• 🔄 Inscrever jogadores 100%off fora da janela de transferência\n"
-                        "• <:ttk2:1548070761590296587> Divulgar link com Everyone\n"
+                        "• 📢 Divulgar link com Everyone\n"
                         "• 🎧 Call personalizada para seu clube\n"
                         "• 🎟️ Participar de sorteios exclusivos\n"
                         "• 💬 Grupo com os Donos e Moderadores\n"
