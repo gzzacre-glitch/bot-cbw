@@ -3,7 +3,7 @@ from discord.ext import commands
 
 DONO_VENDAS_ID = 848956596092796968
 
-# Links das imagens dos produtos (Substitua pelos seus links do Imgur/Imgbb)
+# Links das imagens extraídos do seu código
 URL_IMAGEM_ESMERALDA = "https://i.imgur.com/iJUOnFG.png"
 URL_IMAGEM_CARD = "https://i.imgur.com/Rhna2qs.png"
 URL_IMAGEM_IMPULSO = "https://i.imgur.com/08CmKaU.png"
